@@ -21,7 +21,7 @@ async function start(){
     page+=1;
   } while (repoTemp.data.length>0);
 
-  for (let index = 54; index < repos.length; index++) {
+  for (let index = 0; index < repos.length; index++) {
     const repo = repos[index];
     console.log('Downloading', repo.full_name, `${index+1}/${repos.length}`);
     try{
